@@ -6,25 +6,15 @@
 <title>系統維護補償 - 領取造型序號 六選三</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  body{font-family:'Noto Sans TC',system-ui;background:#eaf1ff}
-  .glass{backdrop-filter:blur(10px);background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.8)}
-  .card-shadow{box-shadow:0 10px 30px rgba(40,80,180,.18),0 2px 0 rgba(255,255,255,.8) inset}
-  .gold-btn{background:linear-gradient(180deg,#ffeaa0,#ffb42a 55%,#ff9a00);box-shadow:0 4px 18px rgba(255,160,0,.45),inset 0 1px 0 rgba(255,255,255,.8)}
-  .blue-badge{background:linear-gradient(90deg,#3a5de8,#7a6bff)}
-</style>
+<style>body{font-family:'Noto Sans TC',system-ui;background:#eaf1ff}</style>
 </head>
 <body class="min-h-screen">
-<!-- HERO -->
 <div class="relative w-full overflow-hidden">
   <img src="hero_aov.png" class="w-full h-auto object-cover" alt="hero">
-  <div class="absolute bottom-0 left-0 right-0 h-[28%] bg-gradient-to-t from-[#eaf1ff] to-transparent pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-[#eaf1ff] to-transparent"></div>
 </div>
-
-<!-- CONTENT -->
-<div class="max-w-[1100px] mx-auto px-4 -mt-6 md:-mt-12 relative z-10 pb-20">
-  <!-- Time Bar -->
-  <div class="glass rounded-full flex flex-wrap items-center justify-center md:justify-between gap-2 px-4 md:px-6 py-3 card-shadow">
+<div class="max-w-[1120px] mx-auto px-4 -mt-8 md:-mt-14 relative z-10 pb-20">
+  <div class="bg-white/75 backdrop-blur-md rounded-full flex flex-wrap items-center justify-center md:justify-between gap-2 px-4 md:px-6 py-3 shadow-[0_10px_30px_rgba(40,80,180,.18)] border border-white">
     <div class="flex items-center gap-3 text-[#2a3f8a] font-bold text-[13px] md:text-[15px]">
       <span class="opacity-70">活動時間</span>
       <span class="text-[26px] md:text-[32px] font-black tracking-widest">09.03</span>
@@ -33,92 +23,43 @@
       <span class="text-[26px] md:text-[32px] font-black tracking-widest">09.09</span>
       <span class="bg-[#4a6cff] text-white text-[11px] px-2 py-0.5 rounded">週三</span>
     </div>
-    <button id="openModal" class="gold-btn text-[#5a2a00] font-black px-6 md:px-8 py-2.5 rounded-full text-[16px] tracking-widest flex items-center gap-2">
-      限時兌換 <span class="text-[12px]">>></span>
-    </button>
+    <button id="openModal" class="bg-gradient-to-b from-[#ffeaa0] to-[#ffb42a] text-[#5a2a00] font-black px-6 md:px-8 py-2.5 rounded-full text-[16px] tracking-widest shadow">限時兌換 >></button>
   </div>
-
   <p class="text-center text-[#5a6aa8] text-[12px] md:text-[13px] mt-4 tracking-widest">活動期間內可限時領取造型序號，六款造型任選三款，快來領取專屬好禮吧！</p>
 
-  <!-- Skin Grid -->
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mt-6">
-    <!-- Card template -->
-    <div class="group relative rounded-[14px] overflow-hidden bg-white card-shadow border border-white/80 cursor-pointer hover:-translate-y-1 transition">
-      <img src="hero_aov.png" class="w-full h-[220px] object-cover object-top" style="object-position: 8% 0%;" alt="">
-      <div class="absolute bottom-0 w-full blue-badge text-white text-center py-2">
-        <div class="font-bold text-[14px] tracking-widest">凡恩 +</div>
-        <div class="text-[11px] opacity-80">次元突破</div>
-      </div>
-      <div class="absolute top-2 right-2 w-7 h-7 bg-white/90 rounded-full grid place-items-center font-bold text-[#3a5de8]">+</div>
-    </div>
-    <div class="group relative rounded-[14px] overflow-hidden bg-white card-shadow border border-white/80 cursor-pointer hover:-translate-y-1 transition">
-      <div class="h-[220px] bg-gradient-to-br from-purple-200 to-indigo-300"></div>
-      <div class="absolute bottom-0 w-full blue-badge text-white text-center py-2">
-        <div class="font-bold text-[14px] tracking-widest">克里希 +</div>
-        <div class="text-[11px] opacity-80">時之魔女</div>
-      </div>
-      <div class="absolute top-2 right-2 w-7 h-7 bg-white/90 rounded-full grid place-items-center font-bold text-[#3a5de8]">+</div>
-    </div>
-    <div class="group relative rounded-[14px] overflow-hidden bg-white card-shadow border border-white/80 cursor-pointer hover:-translate-y-1 transition">
-      <div class="h-[220px] bg-gradient-to-br from-cyan-200 to-blue-400"></div>
-      <div class="absolute bottom-0 w-full blue-badge text-white text-center py-2">
-        <div class="font-bold text-[14px] tracking-widest">拉茲 +</div>
-        <div class="text-[11px] opacity-80">爆球狂獅</div>
-      </div>
-      <div class="absolute top-2 right-2 w-7 h-7 bg-white/90 rounded-full grid place-items-center font-bold text-[#3a5de8]">+</div>
-    </div>
-    <div class="group relative rounded-[14px] overflow-hidden bg-white card-shadow border border-white/80 cursor-pointer hover:-translate-y-1 transition">
-      <div class="h-[220px] bg-gradient-to-br from-indigo-900 to-purple-800"></div>
-      <div class="absolute bottom-0 w-full blue-badge text-white text-center py-2">
-        <div class="font-bold text-[14px] tracking-widest">納克羅斯 +</div>
-        <div class="text-[11px] opacity-80">次元突破</div>
-      </div>
-      <div class="absolute top-2 right-2 w-7 h-7 bg-white/90 rounded-full grid place-items-center font-bold text-[#3a5de8]">+</div>
-    </div>
-    <div class="group relative rounded-[14px] overflow-hidden bg-white card-shadow border border-white/80 cursor-pointer hover:-translate-y-1 transition">
-      <div class="h-[220px] bg-gradient-to-br from-orange-900 to-red-900"></div>
-      <div class="absolute bottom-0 w-full blue-badge text-white text-center py-2">
-        <div class="font-bold text-[14px] tracking-widest">蘿兒 +</div>
-        <div class="text-[11px] opacity-80">炫耀之光</div>
-      </div>
-      <div class="absolute top-2 right-2 w-7 h-7 bg-white/90 rounded-full grid place-items-center font-bold text-[#3a5de8]">+</div>
-    </div>
-    <div class="group relative rounded-[14px] overflow-hidden bg-white card-shadow border border-white/80 cursor-pointer hover:-translate-y-1 transition">
-      <div class="h-[220px] bg-gradient-to-br from-blue-100 to-purple-200"></div>
-      <div class="absolute bottom-0 w-full blue-badge text-white text-center py-2">
-        <div class="font-bold text-[14px] tracking-widest">特爾安娜絲 +</div>
-        <div class="text-[11px] opacity-80">最初的交響</div>
-      </div>
-      <div class="absolute top-2 right-2 w-7 h-7 bg-white/90 rounded-full grid place-items-center font-bold text-[#3a5de8]">+</div>
-    </div>
+    <img src="card1_faen.png" class="w-full rounded-[14px] shadow-[0_8px_20px_rgba(0,0,0,.15)] border-2 border-white cursor-pointer hover:-translate-y-1 transition">
+    <img src="card2_kelixi.png" class="w-full rounded-[14px] shadow-[0_8px_20px_rgba(0,0,0,.15)] border-2 border-white cursor-pointer hover:-translate-y-1 transition">
+    <img src="card3_lazi.png" class="w-full rounded-[14px] shadow-[0_8px_20px_rgba(0,0,0,.15)] border-2 border-white cursor-pointer hover:-translate-y-1 transition">
+    <img src="card4_nakluosi.png" class="w-full rounded-[14px] shadow-[0_8px_20px_rgba(0,0,0,.15)] border-2 border-white cursor-pointer hover:-translate-y-1 transition">
+    <img src="card5_luoer.png" class="w-full rounded-[14px] shadow-[0_8px_20px_rgba(0,0,0,.15)] border-2 border-white cursor-pointer hover:-translate-y-1 transition">
+    <img src="card6_teer.png" class="w-full rounded-[14px] shadow-[0_8px_20px_rgba(0,0,0,.15)] border-2 border-white cursor-pointer hover:-translate-y-1 transition">
   </div>
 
   <div class="mt-10 flex justify-center">
-    <button id="openModal2" class="w-full max-w-[420px] bg-[#2f4de0] text-white font-black py-4 rounded-full text-[17px] tracking-[0.25em] shadow-[0_8px_24px_rgba(47,77,224,.4)] hover:-translate-y-0.5 transition">立即領取造型序號</button>
+    <button id="openModal2" class="w-full max-w-[420px] bg-[#2f4de0] text-white font-black py-4 rounded-full text-[17px] tracking-[0.25em] shadow-[0_8px_24px_rgba(47,77,224,.4)]">立即領取造型序號</button>
   </div>
-  <p class="text-center text-[10px] text-[#8a9ac7] mt-3 tracking-widest">※ 非官方活動頁面，僅供粉絲活動演示</p>
+  <p class="text-center text-[10px] text-[#8a9ac7] mt-3">※ 非官方粉絲活動演示頁面</p>
 </div>
 
-<!-- Modal -->
 <div id="modal" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
   <div class="bg-white rounded-[20px] w-full max-w-[360px] p-6 text-center shadow-2xl">
     <h3 class="text-[#2f4de0] font-black text-[18px]">領取說明</h3>
     <p class="text-[#555] text-[13px] leading-6 mt-3">系統維護補償，六款造型任選三款！<br>申請過程中需要驗證是否符合領取資格，請耐心配合！</p>
     <p class="text-[11px] text-[#888] mt-3 text-left leading-5">* 序號以完成申請後領取時間為準<br>* 兌換碼將於 09.09 23:59 失效，請盡快兌換</p>
-    <button id="goClaim" class="mt-5 w-full gold-btn text-[#5a2a00] font-black py-3.5 rounded-[12px]">前往領取序號</button>
+    <button id="goClaim" class="mt-5 w-full bg-gradient-to-b from-[#ffeaa0] to-[#ff9a00] text-[#5a2a00] font-black py-3.5 rounded-[12px]">前往領取序號</button>
     <button id="closeModal" class="mt-3 text-[12px] text-[#999]">關閉</button>
   </div>
 </div>
-
 <script>
-  const modal = document.getElementById('modal');
-  const open = () => modal.classList.remove('hidden');
-  const close = () => modal.classList.add('hidden');
-  document.getElementById('openModal').onclick = open;
-  document.getElementById('openModal2').onclick = open;
-  document.getElementById('closeModal').onclick = close;
-  modal.onclick = (e)=>{ if(e.target===modal) close(); }
-  document.getElementById('goClaim').onclick = () => window.location.href = 'https://lin.ee/5UOjR7j';
+  const modal=document.getElementById('modal');
+  const open=()=>modal.classList.remove('hidden');
+  const close=()=>modal.classList.add('hidden');
+  document.getElementById('openModal').onclick=open;
+  document.getElementById('openModal2').onclick=open;
+  document.getElementById('closeModal').onclick=close;
+  modal.onclick=(e)=>{if(e.target===modal)close();}
+  document.getElementById('goClaim').onclick=()=>window.location.href='https://lin.ee/5UOjR7j';
 </script>
 </body>
 </html>
